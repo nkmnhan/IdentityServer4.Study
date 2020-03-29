@@ -18,6 +18,12 @@ namespace IdentityServer
             new List<ApiResource>
             {
                 new ApiResource("api1", "My API")
+                {
+                    ApiSecrets = new List<Secret>
+                    {
+                        new Secret("secret".Sha256())
+                    }
+                }
             };
 
         public static IEnumerable<Client> Clients =>

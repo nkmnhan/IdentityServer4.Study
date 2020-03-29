@@ -7,15 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{7A2C34B5-EF46-449B-8640-5DED93326745}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.AspNetIdentity", "..\IdentityServer4Clone\AspNetIdentity\src\IdentityServer4.AspNetIdentity.csproj", "{F5D8548A-1F2B-47EF-BA61-715E98C36F14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.AspNetIdentity", "..\IdentityServer4.Clone\AspNetIdentity\src\IdentityServer4.AspNetIdentity.csproj", "{F5D8548A-1F2B-47EF-BA61-715E98C36F14}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.EntityFramework", "..\IdentityServer4Clone\EntityFramework\src\IdentityServer4.EntityFramework.csproj", "{1BFE4EAA-91C0-44DC-BB21-C9EF646D33A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.EntityFramework", "..\IdentityServer4.Clone\EntityFramework\src\IdentityServer4.EntityFramework.csproj", "{1BFE4EAA-91C0-44DC-BB21-C9EF646D33A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4", "..\IdentityServer4Clone\IdentityServer4\src\IdentityServer4.csproj", "{CCD0C1CD-9FA2-4FE5-B414-77C4968E00F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4", "..\IdentityServer4.Clone\IdentityServer4\src\IdentityServer4.csproj", "{CCD0C1CD-9FA2-4FE5-B414-77C4968E00F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.EntityFramework.Storage", "..\IdentityServer4Clone\EntityFramework.Storage\src\IdentityServer4.EntityFramework.Storage.csproj", "{D58F3899-E0FD-4E1C-BC19-B3D829631AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.EntityFramework.Storage", "..\IdentityServer4.Clone\EntityFramework.Storage\src\IdentityServer4.EntityFramework.Storage.csproj", "{D58F3899-E0FD-4E1C-BC19-B3D829631AE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Storage", "..\IdentityServer4Clone\Storage\src\IdentityServer4.Storage.csproj", "{F9E3BDC7-25C4-4A35-BAF3-73C77E591ABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Storage", "..\IdentityServer4.Clone\Storage\src\IdentityServer4.Storage.csproj", "{F9E3BDC7-25C4-4A35-BAF3-73C77E591ABE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
