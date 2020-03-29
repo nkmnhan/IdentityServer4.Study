@@ -1,4 +1,5 @@
 ﻿using IdentityServer.InfrastmentStructure;
+using IdentityServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
