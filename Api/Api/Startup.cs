@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Api
 {
@@ -20,13 +21,20 @@ namespace Api
         {
             services.AddControllers();
 
+            services.AddDistributedMemoryCache();
+
             services.AddAuthentication("Bearer")
-                .AddJwtBearer("Bearer", options =>
+                .AddIdentityServerAuthentication("Bearer", options =>
                 {
                     options.Authority = "http://localhost:5000";
                     options.RequireHttpsMetadata = false;
 
-                    options.Audience = "api1";
+                    options.ApiName = "api1";
+                    options.ApiSecret = "secret";
+
+                    options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Reference;
+                    options.EnableCaching = true;
+                    options.CacheDuration = TimeSpan.FromMinutes(10);
                 });
 
             services.AddCors(options =>
