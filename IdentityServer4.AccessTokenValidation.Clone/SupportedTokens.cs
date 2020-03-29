@@ -1,32 +1,26 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-
-namespace IdentityServer4.Events
+namespace IdentityServer4.AccessTokenValidation
 {
     /// <summary>
-    /// Indicates if the event is a success or fail event.
+    /// Supported token types
     /// </summary>
-    public enum EventTypes
+    public enum SupportedTokens
     {
         /// <summary>
-        /// Success event
+        /// JWTs and reference tokens
         /// </summary>
-        Success = 1,
+        Both,
 
         /// <summary>
-        /// Failure event
+        /// JWTs only
         /// </summary>
-        Failure = 2,
+        Jwt,
 
         /// <summary>
-        /// Information event
+        /// Reference tokens only
         /// </summary>
-        Information = 3,
-        
-        /// <summary>
-        /// Error event
-        /// </summary>
-        Error = 4
+        Reference
     }
 }
