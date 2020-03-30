@@ -73,7 +73,7 @@ Login Success
 
 Call API
 
-![Image of Call API](Documents/CallAPISuccess.png)
+![Image of Call API](Documents/CallApiSuccess.png)
 
 Verify introspection log in IdnetityServer project
 
