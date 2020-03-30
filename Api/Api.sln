@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{E0A97467-D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.AccessTokenValidation", "..\IdentityServer4.AccessTokenValidation.Clone\IdentityServer4.AccessTokenValidation.csproj", "{E3575B12-4BF8-48C2-99CE-A3F466D459BB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityModel.AspNetCore.OAuth2Introspection", "..\IdentityModel.AspNetCore.OAuth2Introspection.Clone\IdentityModel.AspNetCore.OAuth2Introspection.csproj", "{D8411F48-1BA2-4569-B69F-92D784C8C33A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{E3575B12-4BF8-48C2-99CE-A3F466D459BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3575B12-4BF8-48C2-99CE-A3F466D459BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3575B12-4BF8-48C2-99CE-A3F466D459BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8411F48-1BA2-4569-B69F-92D784C8C33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8411F48-1BA2-4569-B69F-92D784C8C33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8411F48-1BA2-4569-B69F-92D784C8C33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8411F48-1BA2-4569-B69F-92D784C8C33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E3575B12-4BF8-48C2-99CE-A3F466D459BB} = {E0A97467-D9D6-4A44-A82E-BC55E4A1FCB0}
+		{D8411F48-1BA2-4569-B69F-92D784C8C33A} = {E0A97467-D9D6-4A44-A82E-BC55E4A1FCB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDA6622A-97A4-489A-96FB-1C2E3B07DD54}
