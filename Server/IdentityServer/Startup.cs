@@ -52,9 +52,6 @@ namespace IdentityServer
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddDeveloperSigningCredential();
 
-            //services.AddDistributedMemoryCache();
-
-
             services.AddLogging();
         }
 
