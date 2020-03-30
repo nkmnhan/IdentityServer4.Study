@@ -1,12 +1,13 @@
 # IdentityServer4.Study
- Identity Server 4 Sample
 
-### The first picture
+### Overview
 We have an IdentityServer, Client, Api, Client.
 The client calls IdentityServer for getting token then the Client use this token to call API.
 I use a reference token type in these projects.
 When using reference tokens - IdentityServer will store the contents of the token in a data store and will only issue a unique identifier for this token back to the client. The API receiving this reference must then open a back-channel communication to IdentityServer to validate the token.
-![alt text](https://identityserver4.readthedocs.io/en/3.1.0/_images/reference_tokens.png)
+
+![alt text](https://identityserver4.readthedocs.io/en/3.1.0/_images/reference_tokens.png "Reference Token")
+
 See [here](https://identityserver4.readthedocs.io/en/latest/) for more information about IdentityServer4
 ### Introduction
 We have 3 projects in this repository
@@ -17,14 +18,20 @@ This is an MVC project play a role as a client
 ##### Api: [\Api\Api.sln](https://github.com/nkmnhan/IdentityServer4.Study/tree/master/Api)
 This is an API project provides API for client
 
-### Before run
+### Preparation
 ##### Prerequisite:
-- You must have SQL SERVER installed on your computer.
+>You must have SQL SERVER installed on your computer.
 
-Check connection to SQL SERVER in `appsetting.json` IdentityServer project:
+##### Setting up the IdentityServer
+Check connection to SQL SERVER in `appsetting.json` of the IdentityServer project:
 ```
 "ConnectionStrings": {
     "IdentityUserConnection": "Data Source=.;database=IdentityUsers;trusted_connection=yes;",
     "IdentityConfigConnection": "Data Source=.;database=IdentityConfig;trusted_connection=yes;"
   }
 ```
+Then you run all 3 projects
+
+OK - let’s get started!
+
+

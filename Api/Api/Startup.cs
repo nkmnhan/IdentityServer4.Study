@@ -21,7 +21,7 @@ namespace Api
         {
             services.AddControllers();
 
-            //services.AddDistributedMemoryCache();
+            services.AddDistributedMemoryCache();
 
             services.AddAuthentication("Bearer")
                 .AddIdentityServerAuthentication("Bearer", options =>
@@ -32,9 +32,8 @@ namespace Api
                     options.ApiName = "api1";
                     options.ApiSecret = "secret";
 
-                    //options.EnableCaching = true;
-                    //options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Reference;
-                    options.CacheDuration = TimeSpan.FromMinutes(1);
+                    options.EnableCaching = true;
+                    options.CacheDuration = TimeSpan.FromMinutes(10);
                 });
 
             services.AddCors(options =>
