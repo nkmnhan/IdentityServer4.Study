@@ -46,6 +46,7 @@ namespace IdentityServer
                     ClientSecrets = { new Secret("secret".Sha256()) },
 
                     AllowedGrantTypes = GrantTypes.Code,
+                    AccessTokenType = AccessTokenType.Reference,
                     RequireConsent = false,
                     RequirePkce = true,
                 
@@ -61,7 +62,6 @@ namespace IdentityServer
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     },
-
                     AllowOfflineAccess = true
                 },
                 // JavaScript Client

@@ -89,7 +89,6 @@ namespace IdentityServer
             {
                 SeedData.EnsureSeedData(app, Configuration.GetConnectionString("IdentityUserConnection"));
 
-
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
