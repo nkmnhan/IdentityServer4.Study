@@ -33,7 +33,7 @@ AccessTokenType = AccessTokenType.Reference
 
 #### Api Resource and Api Secrete
 
-![Image of Api Resource and Api Secrete](Documents/IdmApiResource.png)
+![Image of Api Resource and Api Secret](Documents/IdmApiResource.png)
 
 #### Identity Server 4 Setting
 
@@ -61,7 +61,7 @@ OK - let’s get started!
 
 
 ## Run the applications
-Go to [http://localhost:5002](http://localhost:5002) then login with default account.
+Go to [http://localhost:5002](http://localhost:5002) then login with the default account.
 
 >The default users are alice/bob, password: Pass123$
 
@@ -75,6 +75,9 @@ Call API
 
 ![Image of Call API](Documents/CallApiSuccess.png)
 
+Go to table PersistedGrans of IdentityConfig database to verify the token
+![Image of Call API](Documents/TokenInDb.png)
+
 Verify introspection log in IdnetityServer project
 
 ![Image of Introspection](Documents/IdentityServerLog.png)
@@ -85,7 +88,7 @@ Verify introspection log in IdnetityServer project
 - IdentityServer4.AccessTokenValidation.Clone - v3.0.1
 - IdentityModel.AspNetCore.OAuth2Introspection.Clone - v4.0.1
 
->I was reference these documents and libs
+>I referenced these documents and libs
 
 IdentityServer4: [https://identityserver4.readthedocs.io/](https://identityserver4.readthedocs.io/)
 
